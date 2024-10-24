@@ -24,94 +24,79 @@
 
 4. **Tests des fonctionnalités** :
    - Utilisation de Postman pour tester les différentes routes de l'application.
-#### 1. Ajouter une voiture (POST /cars)
 
-**Postman :**
-- Méthode : `POST`
-- URL : `http://localhost:3000/cars`
-- Corps de la requête (JSON) :
+### Exemples de requêtes avec Postman
+
+#### 1. Ajouter une voiture (POST /cars)
+- **Méthode** : `POST`
+- **URL** : `http://localhost:3000/cars`
+- **Corps de la requête (JSON)** :
     ```json
     {
         "car": "ford-mustang"
     }
     ```
-#### 2. Récupérer toutes les voitures (GET /cars)
-**Postman :**
-- Méthode : `GET`
-- URL : `http://localhost:3000/cars`
-#### 3. Supprimer une voiture (DELETE /cars)
 
-**Postman :**
-- Méthode : `DELETE`
-- URL : `http://localhost:3000/cars`
-- Corps de la requête (JSON) :
+#### 2. Récupérer toutes les voitures (GET /cars)
+- **Méthode** : `GET`
+- **URL** : `http://localhost:3000/cars`
+
+#### 3. Supprimer une voiture (DELETE /cars)
+- **Méthode** : `DELETE`
+- **URL** : `http://localhost:3000/cars`
+- **Corps de la requête (JSON)** :
     ```json
     {
         "car": "ford-mustang"
-    }```
-    
-#### 4. Ajouter une fonctionnalité à  une voiture (POST /features)
-
-**Postman :**
-- Méthode : `POST`
-- URL : `http://localhost:3000/features`
-- Corps de la requête (JSON) :
-    ```json
-{
-    "feature": "climate-control"
-}```
-
-#### 5. Récupérer toutes les focntionnalités (GET /features)
-**Postman :**
-- Méthode : `GET`
-- URL : `http://localhost:3000/features`
-
-#### 6. Supprimer une focntionnalité (DELETE /features)
-
-**Postman :**
-- Méthode : `DELETE`
-- URL : `http://localhost:3000/features`
-- Corps de la requête (JSON) :
-    ```json
-    {
-        "feature": "climate-control"
-    }```
-#### 7. Ajouter une description à  une voiture (POST /cardescriptions)
-
-**Postman :**
-- Méthode : `POST`
-- URL : `http://localhost:3000/cardescriptions`
-- Corps de la requête (JSON) :
-    ```json
-{
-    "id": "cjhvatfuc00005mfj2zycewid",
-    "description": {
-        "make": "Ford",
-        "model": "Mustang",
-        "year": "2020"
     }
-}```
+    ```
 
-#### 8. Récupérer la description d'une voiture (GET /cardescriptions)
-**Postman :**
-- Méthode : `GET`
-- URL : `http://localhost:3000/cardescriptions/cjhvatfuc00005mfj2zycewid`
-
-#### 9. Supprimer la description d'une voiture (DELETE /cardescriptions)
-
-**Postman :**
-- Méthode : `DELETE`
-- URL : `http://localhost:3000/cardescriptions/cjhvatfuc00005mfj2zycewid`
-- Corps de la requête (JSON) :
+#### 4. Ajouter une fonctionnalité à une voiture (POST /features)
+- **Méthode** : `POST`
+- **URL** : `http://localhost:3000/features`
+- **Corps de la requête (JSON)** :
     ```json
     {
         "feature": "climate-control"
-    }```
-    
-    
-5. **Débogage et corrections** :
-   - Résolution des erreurs liées à la connexion au client Redis.
-   - Adaptation des méthodes Redis pour correspondre à la version 4 de Redis, en utilisant des promesses et des méthodes modernes.
+    }
+    ```
+
+#### 5. Récupérer toutes les fonctionnalités (GET /features)
+- **Méthode** : `GET`
+- **URL** : `http://localhost:3000/features`
+
+#### 6. Supprimer une fonctionnalité (DELETE /features)
+- **Méthode** : `DELETE`
+- **URL** : `http://localhost:3000/features`
+- **Corps de la requête (JSON)** :
+    ```json
+    {
+        "feature": "climate-control"
+    }
+    ```
+
+#### 7. Ajouter une description à une voiture (POST /cardescriptions)
+- **Méthode** : `POST`
+- **URL** : `http://localhost:3000/cardescriptions`
+- **Corps de la requête (JSON)** :
+    ```json
+    {
+        "id": "cjhvatfuc00005mfj2zycewid",
+        "description": {
+            "make": "Ford",
+            "model": "Mustang",
+            "year": "2020"
+        }
+    }
+    ```
+
+#### 8. Récupérer la description d'une voiture (GET /cardescriptions/:id)
+- **Méthode** : `GET`
+- **URL** : `http://localhost:3000/cardescriptions/cjhvatfuc00005mfj2zycewid`
+
+#### 9. Supprimer la description d'une voiture (DELETE /cardescriptions/:id)
+- **Méthode** : `DELETE`
+- **URL** : `http://localhost:3000/cardescriptions/cjhvatfuc00005mfj2zycewid`
 
 ## Difficultés rencontrées
 
